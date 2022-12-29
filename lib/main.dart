@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:movie/constant/strings.dart';
 import 'package:movie/utils/movie.dart';
-import 'package:movie/utils/photos.dart';
-
 import 'constant/colors.dart';
 import 'constant/dimens.dart';
+import 'constant/photos.dart';
 
 void main(){
   runApp(const MaterialApp(home: MyApp(),debugShowCheckedModeBanner: false,));
@@ -19,8 +18,8 @@ class MyApp extends StatelessWidget {
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         centerTitle: true,
-        leading: Image.asset(Photo.menuImg,color: abC,height: kH3,),
-        title: Image.asset(Photo.studioImg,width: kW3,height: kH2,),
+        leading: Image.asset(menuImg,color: abC,height: kH3,),
+        title: Image.asset(studioImg,width: kW3,height: kH2,),
         backgroundColor: abB,
         elevation: 0,
         actions: [
@@ -34,7 +33,7 @@ class MyApp extends StatelessWidget {
       ),
       body: Stack(
         children: [
-          Image.asset(Photo.bgImg,
+          Image.asset(bgImg,
           width: getWidth(context),
           height: getHeight(context),
           fit: BoxFit.cover,
@@ -68,11 +67,11 @@ class MyApp extends StatelessWidget {
                 Wrap(
                   spacing: kS1,
                   direction: Axis.horizontal,
-                  children: [
-                    Movie( movies: Photo.bImg,),
-                    Movie( movies: Photo.cImg,),
-                    Movie( movies: Photo.dImg,),
-                    Movie( movies: Photo.eImg,),
+                  children: const [
+                    Movie( movies: bImg,),
+                    Movie( movies: cImg,),
+                    Movie( movies: dImg,),
+                    Movie( movies: eImg,),
                   ],
                 ),
               ],
