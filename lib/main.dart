@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:movie/utils/appStyle.dart';
+import 'package:movie/constant/strings.dart';
 import 'package:movie/utils/movie.dart';
 import 'package:movie/utils/photos.dart';
 
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
           IconButton(onPressed: (){}, icon: const Icon(
               Icons.search,
             color: abC,
-            size: kS1,
+            size: kIs1,
           )),
           const SizedBox(width: kW2,)
         ],
@@ -40,33 +40,33 @@ class MyApp extends StatelessWidget {
           fit: BoxFit.cover,
           ),
           Positioned(
-            right: 0,
-            top: 150,
+            right: kPr1,
+            top: kPt1,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children:  [
-                const Text('I want to eat \nYour \nPancreas\n(2018)',style: TextStyle(
+              children:  const [
+                Text(title,style: TextStyle(
                     fontWeight: FontWeight.w400,
-                    fontSize: 30,
+                    fontSize: kFont2,
                     fontFamily: 'Serif'
                   ),),
-                const Gap(5),
-                Text('1hour 48mins           400votes',style: TextStyle(color: AppStyle.textColor),),
-                const Gap(5),
-                const Icon(Icons.play_circle_outline_outlined,size: 45,)
+                Gap(kG),
+                Text(voting,style: TextStyle(color: textColor),),
+                Gap(kG),
+                Icon(Icons.play_circle_outline_outlined,size: kIs,)
               ],
             ),
 
           ),
           Positioned(
-            bottom: 10,
+            bottom: kPb1,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("K bones Cinema :related videos..",style: TextStyle(color: AppStyle.textColor,fontSize: 16,fontFamily: 'Serif',fontWeight: FontWeight.bold),),
-                const Gap(5),
+                const Text(related,style: TextStyle(color: textColor,fontSize: kFont3,fontFamily: 'Serif',fontWeight: FontWeight.bold),),
+                const Gap(kG),
                 Wrap(
-                  spacing: 10,
+                  spacing: kS1,
                   direction: Axis.horizontal,
                   children: [
                     Movie( movies: Photo.bImg,),
