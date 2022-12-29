@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:movie/constant/dimens.dart';
 
 class Movie extends StatelessWidget {
   final String movies;
@@ -7,8 +8,8 @@ class Movie extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 100,
-      height: 200,
+      width: kW1,
+      height: kH1,
       child: Image.asset(movies,fit: BoxFit.cover,),
     );
   }

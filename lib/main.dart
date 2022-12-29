@@ -4,6 +4,9 @@ import 'package:movie/utils/appStyle.dart';
 import 'package:movie/utils/movie.dart';
 import 'package:movie/utils/photos.dart';
 
+import 'constant/colors.dart';
+import 'constant/dimens.dart';
+
 void main(){
   runApp(const MaterialApp(home: MyApp(),debugShowCheckedModeBanner: false,));
 }
@@ -16,15 +19,15 @@ class MyApp extends StatelessWidget {
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         centerTitle: true,
-        leading: Image.asset(Photo.menuImg,color: AppStyle.abC,height: 40,),
+        leading: Image.asset(Photo.menuImg,color: abC,height: 40,),
         title: Image.asset(Photo.studioImg,width: 200,height: 30,),
-        backgroundColor: AppStyle.abB,
+        backgroundColor: abB,
         elevation: 0,
         actions: [
-          IconButton(onPressed: (){}, icon: Icon(
+          IconButton(onPressed: (){}, icon: const Icon(
               Icons.search,
-            color: AppStyle.abC,
-            size: 40,
+            color: abC,
+            size: kS1,
           )),
           const SizedBox(width: 10,)
         ],
