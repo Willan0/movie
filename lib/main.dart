@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         centerTitle: true,
-        leading: Image.asset(Photo.menuImg,color: abC,height: 40,),
-        title: Image.asset(Photo.studioImg,width: 200,height: 30,),
+        leading: Image.asset(Photo.menuImg,color: abC,height: kH3,),
+        title: Image.asset(Photo.studioImg,width: kW3,height: kH2,),
         backgroundColor: abB,
         elevation: 0,
         actions: [
@@ -29,14 +29,14 @@ class MyApp extends StatelessWidget {
             color: abC,
             size: kS1,
           )),
-          const SizedBox(width: 10,)
+          const SizedBox(width: kW2,)
         ],
       ),
       body: Stack(
         children: [
           Image.asset(Photo.bgImg,
-          width: AppStyle.getWidth(context),
-          height: AppStyle.getHeight(context),
+          width: getWidth(context),
+          height: getHeight(context),
           fit: BoxFit.cover,
           ),
           Positioned(
