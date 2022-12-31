@@ -19,12 +19,13 @@ class TextWidgets extends StatelessWidget {
           Text(title,style: TextStyle(
               fontWeight: FontWeight.w400,
               fontSize: kFont2,
-              fontFamily: 'Serif'
+              fontFamily: 'Serif',
+            color: bColor
           ),),
           Gap(kG),
-          Text(voting,style: TextStyle(color: textColor),),
+          Text(voting,style: TextStyle(color: tColor),),
           Gap(kG),
-          Icon(Icons.play_circle_outline_outlined,size: kIs,)
+          Icon(Icons.play_circle_outline_outlined,size: kIs,color: bColor,)
         ],
       ),
     );

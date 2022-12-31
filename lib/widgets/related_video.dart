@@ -17,7 +17,7 @@ class RelatedVideo extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(related,style: TextStyle(color: textColor,fontSize: kFont3,fontFamily: 'Serif',fontWeight: FontWeight.bold),),
+          const Text(related,style: TextStyle(color: bColor,fontSize: kFont3,fontFamily: 'Serif',fontWeight: FontWeight.bold),),
           const Gap(kG),
           Wrap(
             spacing: kS1,

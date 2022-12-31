@@ -9,7 +9,7 @@ getHeight(BuildContext context)=> MediaQuery.of(context).size.height;
 const double kS1 =10;
 
 //icons size
-const double kIs = 45;
+const double kIs = 50;
 const double kIs1 = 40;
 //font size
 const double kFont1 = 25;
