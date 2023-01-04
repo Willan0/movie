@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
           leading: Image.asset(menuImg,color: abC,height: kH3,),
           title: Image.asset(studioImg,width: kW3,height: kH2,),
           backgroundColor: abB,
-          elevation: 0,
+          elevation: kPr1,
           actions: [
             IconButton(onPressed: (){}, icon: const Icon(
               Icons.search,
