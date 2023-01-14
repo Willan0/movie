@@ -15,17 +15,19 @@ class TextWidgets extends StatelessWidget {
       top: kPt1,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children:   const [
-          Text(title,style: TextStyle(
+        children:    [
+          const Text(title,style: TextStyle(
               fontWeight: FontWeight.w400,
               fontSize: kFont2,
               fontFamily: 'Serif',
             color: bColor
           ),),
-          Gap(kG),
-          Text(voting,style: TextStyle(color: tColor),),
-          Gap(kG),
-          Icon(Icons.play_circle_outline_outlined,size: kIs,color: bColor,)
+          const Gap(kG),
+          const Text(voting,style: TextStyle(color: tColor),),
+          const Gap(kG),
+          IconButton(
+              onPressed: (){},
+              icon: const Icon(Icons.play_circle_outline_outlined,size: kIs,color: bColor))
         ],
       ),
     );
