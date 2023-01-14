@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
 import '../constant/dimens.dart';
-import '../constant/photos.dart';
+import '../utils/photos.dart';
 
 class BackgroundScreen extends StatelessWidget {
   const BackgroundScreen({Key? key}) : super(key: key);
@@ -15,3 +15,4 @@ class BackgroundScreen extends StatelessWidget {
     );
   }
 }
+

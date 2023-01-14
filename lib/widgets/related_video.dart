@@ -3,9 +3,9 @@ import 'package:gap/gap.dart';
 
 import '../constant/colors.dart';
 import '../constant/dimens.dart';
-import '../constant/photos.dart';
+import '../utils/photos.dart';
 import '../constant/strings.dart';
-import '../utils/movie.dart';
+import 'movie.dart';
 
 class RelatedVideo extends StatelessWidget {
   const RelatedVideo({Key? key}) : super(key: key);

@@ -6,7 +6,7 @@ import 'package:movie/widgets/text.dart';
 
 import '../constant/colors.dart';
 import '../constant/dimens.dart';
-import '../constant/photos.dart';
+import '../utils/photos.dart';
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
